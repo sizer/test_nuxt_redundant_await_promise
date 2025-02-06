@@ -54,7 +54,7 @@ const handleClickMeaningLessLongCalcTimeButAsyncLogic = async () => {
   mystatusStore.setStatus("started");
 
   // never display "started"...
-  await await new Promise((resolve) => {
+  await new Promise((resolve) => {
     meaninglessLongCalcTimeLogic();
     resolve(null);
   });
